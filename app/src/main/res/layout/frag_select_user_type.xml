@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Activities.User.UserActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="236dp"
-        android:layout_height="301dp"
+        android:id="@+id/ll_navigation_buttons"
+        android:layout_width="254dp"
+        android:layout_height="316dp"
         android:orientation="vertical"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,11 +19,11 @@
 
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/btn_navigate_to_user"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
-            android:text="Evacuation Done" />
+            android:text="User" />
 
         <View
             android:layout_width="match_parent"
@@ -29,22 +31,13 @@
             android:layout_weight="3" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/btn_nagivate_to_agency"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
-            android:text="Request Help" />
+            android:text="Agency" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3" />
 
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
-            android:text="Volunteer to help" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

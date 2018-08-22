@@ -11,5 +11,12 @@ public class UserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
+
+        //initMVP();
+    }
+
+    private void initMVP() {
+        IUser.View view = new UserView(this);
+        IUser.Presenter presenter = new UserPresenter(view,this);
     }
 }

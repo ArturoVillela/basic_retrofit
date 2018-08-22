@@ -4,36 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectUseAppActivity">
+    tools:context=".Activities.SelectionActivity.SelectionActivity">
 
-    <LinearLayout
-        android:layout_width="316dp"
-        android:layout_height="363dp"
-        android:layout_marginBottom="8dp"
-        android:padding="20dp"
-        android:orientation="vertical"
+    <RelativeLayout
+        android:layout_width="272dp"
+        android:layout_height="292dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btn_user"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
-            android:text="User" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"/>
 
-        <Button
-            android:id="@+id/btn_agency"
+        <FrameLayout
+            android:id="@+id/framelayout_container"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
-            android:text="Agency" />
-    </LinearLayout>
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>
